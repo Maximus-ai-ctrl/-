@@ -2,13 +2,13 @@ CREATE TABLE coffee (
     id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
     roast_level TEXT NOT NULL,
-    ground_or_whole TEXT NOT NULL,
-    taste_description TEXT NOT NULL,
+    type TEXT NOT NULL,
+    flavor_description TEXT NOT NULL,
     price REAL NOT NULL,
-    package_volume TEXT NOT NULL
+    packaging_volume TEXT NOT NULL
 );
 
-INSERT INTO coffee (name, roast_level, ground_or_whole, taste_description, price, package_volume) VALUES
-('Эспрессо', 'Темная', 'Молотый', 'Крепкий и насыщенный вкус', 250.00, '250 г'),
-('Лунго', 'Средняя', 'В зернах', 'Мягкий и сбалансированный', 300.00, '250 г'),
-('Капучино', 'Светлая', 'Молотый', 'Кремовый и легкий', 280.00, '250 г');
+INSERT INTO coffee (name, roast_level, type, flavor_description, price, packaging_volume) VALUES
+('Эспрессо', 'Средняя', 'Молотый', 'Нежный, с нотами шоколада', 5.99, '250 г'),
+('Американо', 'Темная', 'В зернах', 'Крепкий, с легкой горчинкой', 6.49, '500 г'),
+('Латте', 'Светлая', 'Молотый', 'Кремовый, с молочной сладостью', 7.99, '300 г');
